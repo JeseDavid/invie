@@ -7,6 +7,14 @@ body {
 	margin: 0;
 }
 
+button {
+	border-radius: 5px;
+	border: none;
+	background: #fd324e;
+	color: white;
+	padding: 10px;
+}
+
 .titulo {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 70px;
@@ -73,6 +81,7 @@ header {
 	border: 1px solid #1F313C;
 	padding: 10px;
 	margin: 10px;
+	border-radius: 8px;
 }
 
 .right {
