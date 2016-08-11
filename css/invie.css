@@ -52,6 +52,7 @@ body {
 
 .menu {
   font-size: 24px;
+  width: 600px;
   display: inline-block;
   position: absolute;
   right: 0;
@@ -162,4 +163,24 @@ header {
 
 .sexo {
   margin-top: 10px;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  background: #273b47;
+  color: white;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+td {
+  padding: 20px;
+}
+
+table, td, th {
+  border: 1px solid #273b47;
+  border-collapse: collapse;
 }
