@@ -40,7 +40,7 @@ input:focus, textarea:focus {
 }
 
 .contenedor {
-  width: 800px;
+  max-width: 800px;
   margin: auto;
   position: relative;
 }
@@ -96,11 +96,15 @@ input:focus, textarea:focus {
 
 .menu {
   font-size: 24px;
-  width: 600px;
+  width: 500px;
   display: inline-block;
   position: absolute;
-  right: 0;
   color: white;
+}
+
+.menu li {
+  display: inline-block;  
+  margin-left: 30px;
 }
 
 .menu li:before {
@@ -119,13 +123,7 @@ input:focus, textarea:focus {
   margin-left: 0;
 }
 
-.menu li {
-  display: inline-block;  
-  margin-left: 30px;
-}
-
 .guitarra {
-  /*overflow: hidden;*/
   border: 1px solid #1F313C;
   padding: 10px;
   margin: 10px 10px 40px 10px;
@@ -193,7 +191,7 @@ input:focus, textarea:focus {
 
 .formulario {
   display: flex;
-  width: 400px;
+  width: 440px;
   color: white;
 }
 
@@ -228,4 +226,45 @@ input:focus, textarea:focus {
 
 .tabla {
   margin: 50px 0;
+}
+
+@media screen and (max-width: 800px) {
+  /* portada */
+  .titulo {
+    font-size: 45px;
+    margin-top: 30px;
+  }
+  .title-a {
+    font-size: 18px;
+  }
+  .portada {
+    height: auto;
+  }
+  .portada .button {
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  /* guitarras */
+  .guitarras {
+    text-align: center;
+  }
+  .left, .right {
+    float: none;
+    position: static;
+  }
+  .title-b {
+    margin: 0;
+    padding: 0;
+  }
+  .guitarra li {
+    list-style: none;
+  }
+  .guitarra.b {
+    height: auto;
+  }
+  .contenedor-guitarra-b {
+    position: static;
+    margin: 0;
+  }
+  /* guitarras */
 }
