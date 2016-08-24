@@ -341,6 +341,15 @@ video {
   .contenedor-guitarra-a {
     padding: 0;
   }
+  /* precio */
+  .tabla {
+    margin: 50px 20px;
+  }
+  .tabla .contenedor {
+    overflow: auto;
+    border: 1px solid #273b47;
+  }
+  /* precio */
 }
 
 @media screen and (max-width: 767px) {
@@ -405,6 +414,10 @@ video {
   }
   .burguer-button {
     left: 20px;
+    color: white;
+  }
+  .header .contenedor {
+    position: static;
   }
   .menu {
     background: rgba(255, 60, 88, .8);
