@@ -36,10 +36,14 @@
     </section>
     <section id="guitarras" class="guitarras contenedor"> <!-- guitarras -->
       <h2 class="titulo">Nuestras guitarras</h2><!-- titulo -->
-      <div class="video-responsive-contenedor">
-        <iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/R1dW8M4EqYY" frameborder="0" allowfullscreen></iframe>
+      <div class="video-demo-contenedor">
+        <div class="video-demo">
+          <div class="video-responsive-contenedor">
+            <iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/R1dW8M4EqYY" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
       </div>
-      <video src="video/320x240.ogg"></video>
+      <!-- <video src="video/320x240.ogg"></video> -->
       <article class="guitarra"><!-- guitarra 1 -->
         <img data-src="images/invie-acustica.png|images/invie-acustica2x.png" width="350" alt="Guitarra invie Acústica" class="right">
         <div class="contenedor-guitarra-a">
@@ -108,6 +112,7 @@
       </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
     <script>
       var consulta = window.matchMedia('(max-width: 500px');
       consulta.addListener(mediaQuery);
@@ -115,6 +120,12 @@
       var $menu = document.getElementById('menu');
       function toggleMenu() {
         $menu.classList.toggle('active');
+      };
+      function showMenu() {
+        $menu.classList.add('active');
+      };
+      function hideMenu() {
+        $menu.classList.remove('active');
       };
 
       function mediaQuery() {
@@ -132,6 +143,14 @@
       var bLazy = new Blazy({
         selector: 'img'
       });
+
+      // Gestos touch
+      var $body = document.body;
+
+      var gestos = new Hammer($body);
+      gestos.on('swipeleft', hideMenu);
+      gestos.on('swiperight', showMenu);
+
     </script>
   </body>
 </html>
