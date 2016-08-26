@@ -273,12 +273,13 @@ input:focus, textarea:focus {
   background: #395667;
   display: inline-block;
   text-align: center;
-  position: fixed;
-  left: -100%;
-  top: 20px;
   cursor: pointer;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  color: white;
   z-index: 3;
-  transition: .3s;
+  display: none;
 }
 
 video {
@@ -437,8 +438,7 @@ video {
     position: static;
   }
   .burguer-button {
-    left: 20px;
-    color: white;
+    display: block;
   }
   .header .contenedor {
     position: static;
