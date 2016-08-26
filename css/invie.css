@@ -380,6 +380,9 @@ video {
     margin: 0 auto;
     width: 300px;
   }
+  .sexo label {
+    display: block;
+  }
   .intereses label {
     display: block;
     font-size: 16px;
@@ -389,7 +392,7 @@ video {
   }
   input[type="text"], 
   input[type="email"] {
-    font-size: 16px;
+    font-size: 20px;
     padding: 5px;
   }
   textarea {
